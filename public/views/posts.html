@@ -10,25 +10,59 @@
 </div>
 <hr>
 <div class="container">
-    <div class="col-md-9 col-sm-9 col-xs-12">
-        <div style="margin:20px; min-height: 200px;"><img width="100%" data-ng-src={{post.image}}/></div>
+    <div class="col-md-8 col-sm-8 col-xs-12">
+        <div style="margin:10px; min-height: 200px;"><img width="100%" data-ng-src={{post.image}}/></div>
         <div class="fullArticleText">{{post.content}}
             <span data-ng-click="deletePost(post)">
         <a href="#/home"><button type="button" class="btn btn-danger btn-lg"><i class="icon-trash"></i> Delete</button></a>
         </span>
         </div>
     </div>
-    <div class="col-md-3 col-sm-3 hidden-xs">
-        <div style="background-color:red; width:100%;height:200px;margin:20px;"></div>
-        <div style="background-color:green; width:100%;height:200px;margin:20px;"></div>
-        <div style="background-color:blue; width:100%;height:200px;margin:20px;"></div>
+    <div class="col-md-4 col-sm-4 hidden-xs">
+        <div style="width:100%;height:256px;margin:20px;">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNathanielPaiceMedium&tabs=timeline&width=340&height=256&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1067968769888656" width="100%" height="256px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="book">
+            <h3 align="center" style="color:white;">Buy My Book</h3>
+            <div>
+                <div align="center">
+                    <img src="images/book.png" height="180px" width="180px" align="center">
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <h3 align="center" style="color:white;">Another Thing</h3>
+        </div>
     </div>
 </div>
-
 <style>
-img
-{
-background-image:url('images/imageunavailable.jpg');
-width:100%;
+.book {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    margin: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+.other {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+100;Blue+to+Transparent */
+    background: -moz-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(30, 87, 153, 1) 0%, rgba(125, 185, 232, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    margin: 20px;
+    width: 100%;
+    height: 200px;
 }
 </style>
