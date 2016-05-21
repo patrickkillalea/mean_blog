@@ -27,7 +27,7 @@
                 <div align="center">
                     <div class="col-md-12">
                         <div class="col-md-3 col-sm-3 col-xs-6">
-                            <a href="#">
+                            <a href="#" data-toggle="modal" data-target="#1on1Modal">
                                 <div style="margin: 20px;">
                                     <i class="fa fa-user fa-3x"></i>
                                     <p>1 on 1</p>
@@ -35,7 +35,7 @@
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6">
-                            <a href="#">
+                            <a href="#" data-toggle="modal" data-target="#phoneModal">
                                 <div style="margin: 20px;">
                                     <i class="fa fa-phone fa-3x"></i>
                                     <p>Phone</p>
@@ -43,7 +43,7 @@
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6">
-                            <a href="#">
+                            <a href="#" data-toggle="modal" data-target="#skypeModal">
                                 <div style="margin: 20px;">
                                     <i class="fa fa-skype fa-3x"></i>
                                     <p>Skype</p>
@@ -51,7 +51,7 @@
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6">
-                            <a href="#">
+                            <a href="#" data-toggle="modal" data-target="#emailModal">
                                 <div style="margin: 20px;">
                                     <i class="fa fa-envelope fa-3x"></i>
                                     <p>Email</p>
@@ -70,7 +70,7 @@
                     <a href="#/posts/{{post._id}}">
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="articleContainer">
-                                <img data-ng-src="{{post.image}}" height="200px" width="100%">
+                                <div style="background-image: url('{{post.image}}');background-size: cover;background-repeat: no-repeat;background-position: center;height:200px;width:100%;"></div>
                                 <div class="transparent articleDate">
                                     {{post.date}}
                                 </div>
@@ -90,6 +90,64 @@
                             <button type="button" class="btn btn-success btn-lg">View All</button>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="modal fade" id="1on1Modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">1 on 1 sessions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="phoneModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Phone sessions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="skypeModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Skype sessions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="emailModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Email sessions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
                 </div>
             </div>
         </div>
