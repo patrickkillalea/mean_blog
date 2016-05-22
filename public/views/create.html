@@ -1,0 +1,29 @@
+<div class="jumbotron jumbotron-fluid visible" style="background: url('images/blog.jpg') no-repeat center center fixed; height:500px; background-size: cover;">
+    <div data-ng-include="'/views/topnav.html'"></div>
+</div>
+<div class="container">
+    <h2 align="center">Create Blog Post</h2>
+    <hr>
+</div>
+<div class="container">
+    <form data-ng-submit="addPost()" style="margin-top:10px;">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Title" data-ng-model="title"></input>
+        </div>
+        <div class="form-group">
+            <input type="date" class="form-control" data-ng-model="date"></input>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Image" data-ng-model="image"></input>
+        </div>
+        <div class="form-group">
+            <textarea type="text" class="form-control" placeholder="Content" data-ng-model="content"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+</div>
+<style type="text/css">
+textarea {
+    min-height: 500px;
+}
+</style>

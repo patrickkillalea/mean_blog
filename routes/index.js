@@ -50,6 +50,12 @@ router.get('/posts/:post', function(req, res) {
 		res.json(post);
 	});
 });
+// Edit single post
+router.get('/edit/:post', function(req, res) {
+    req.post.populate(function (err, post) {
+        res.json(post);
+    });
+});
 // Delete post
 router.delete('/posts/:post', function(req, res) {
     

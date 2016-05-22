@@ -1,4 +1,4 @@
-var app = angular.module('flapperNews', ['ui.router']);
+var app = angular.module('mediumBlog', ['ui.router']);
 
 app.config([
     '$stateProvider',
@@ -35,6 +35,28 @@ app.config([
                     postPromise: ['posts', function(posts) {
                         $('html, body').animate({ scrollTop: 0 }, 'fast');
                         return posts.getAll();
+                    }]
+                }
+            })
+            .state('create', {
+                url: '/create',
+                templateUrl: '/views/create.html',
+                controller: 'MainCtrl',
+                resolve: {
+                    postPromise: ['posts', function(posts) {
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                        return posts.getAll();
+                    }]
+                }
+            })
+            .state('edit', {
+                url: '/edit/{id}',
+                templateUrl: '/views/edit.html',
+                controller: 'PostsCtrl',
+                resolve: {
+                    post: ['$stateParams', 'posts', function($stateParams, posts) {
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                        return posts.get($stateParams.id);
                     }]
                 }
             })

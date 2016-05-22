@@ -181,8 +181,7 @@ p.wrap {
     overflow: hidden;
 }
 
-
-#homeCircles{
+#homeCircles {
     height: 120px;
 }
 
@@ -214,4 +213,26 @@ p.wrap {
     background: linear-gradient(135deg, #87bafd 24%, #54a2f6 49%, #0464e2 78%, #0464e2 78%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#87bafd', endColorstr='#0464e2', GradientType=1);
+}
+
+
+/*Modal Customization*/
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
