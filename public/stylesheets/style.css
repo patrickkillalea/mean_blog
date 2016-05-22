@@ -109,10 +109,10 @@ a:visited {
 
 .articleTitle {
     color: white;
-    width: 40%;
+    width: 90%;
     height: 30px;
     bottom: 100px;
-    left: 30%;
+    left: 5%;
     position: absolute;
     font-size: 20px;
 }
