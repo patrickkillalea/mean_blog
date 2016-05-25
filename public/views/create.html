@@ -6,24 +6,34 @@
     <hr>
 </div>
 <div class="container">
-    <form data-ng-submit="addPost()" style="margin-top:10px;">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Title" data-ng-model="title"></input>
-        </div>
-        <div class="form-group">
-            <input type="date" class="form-control" data-ng-model="date"></input>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Image" data-ng-model="image"></input>
-        </div>
-        <div class="form-group">
-            <textarea type="text" class="form-control" placeholder="Content" data-ng-model="content"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Post</button>
-    </form>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <form data-ng-submit="addPost()" style="margin-top:10px;">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Title" data-ng-model="title"></input>
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" data-ng-model="date"></input>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Image" data-ng-model="image"></input>
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control" placeholder="Content" data-ng-model="content"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12" align="center">
+        <h3>Preview</h3>
+        <div style="border: 1px black solid">
+        <h4>{{title}}</h4>
+        {{date}}
+        <div style="margin:10px; min-height: 200px;"><img width="100%" src='{{image}}'/></div>
+        <p>{{content}}</p>
+    </div>
 </div>
 <style type="text/css">
 textarea {
-    min-height: 500px;
+min-height: 500px;
 }
 </style>
