@@ -10,6 +10,7 @@ var mongoose = require('mongoose');
 var Post = mongoose.model('Post'); // load post model
 
 // ----------- REST Routes --------------
+
 // Get all posts
 router.get('/posts', function(req, res, next) {
     Post.find(function(err, posts) {
