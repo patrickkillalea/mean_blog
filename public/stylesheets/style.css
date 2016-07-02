@@ -138,9 +138,9 @@ a:visited {
 
 p.wrap {
     display: -webkit-box;
-    height: $font-size*$line-height*$lines-to-show;
-    margin: 0 auto;
-    font-size: 14px;
+    height: 100%;
+    margin: 0 10 20 10;
+    font-size: 18px;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -199,10 +199,10 @@ p.wrap {
     border-radius: 50%;
     border-color: #54a2f6;
     background: #fff;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 #homeCircles a:hover {
