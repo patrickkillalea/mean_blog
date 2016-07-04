@@ -167,7 +167,7 @@ p.wrap {
     background-color: #D9D9D9;
 }
 
-.footer-email{
+.footer-email {
     font-size: 8px;
 }
 
@@ -239,4 +239,12 @@ p.wrap {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+}
+
+.avatar {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 4px 4px 2px #000000;
+    border: solid 2px white;
 }
