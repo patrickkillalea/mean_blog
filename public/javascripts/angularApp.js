@@ -60,9 +60,39 @@ app.config([
                     }]
                 }
             })
-            .state('contacts', {
-                url: '/contacts',
-                templateUrl: '/views/contacts.html',
+            .state('services', {
+                url: '/services',
+                templateUrl: '/views/services.html',
+                controller: 'MainCtrl',
+                resolve: {
+                    postPromise: [function() {
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                    }]
+                }
+            })
+            .state('crystalreadings', {
+                url: '/crystalreadings',
+                templateUrl: '/views/crystalreadings.html',
+                controller: 'MainCtrl',
+                resolve: {
+                    postPromise: [function() {
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                    }]
+                }
+            })
+            .state('emotionalhealing', {
+                url: '/emotionalhealing',
+                templateUrl: '/views/emotionalhealing.html',
+                controller: 'MainCtrl',
+                resolve: {
+                    postPromise: [function() {
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                    }]
+                }
+            })
+            .state('energyreadings', {
+                url: '/energyreadings',
+                templateUrl: '/views/energyreadings.html',
                 controller: 'MainCtrl',
                 resolve: {
                     postPromise: [function() {

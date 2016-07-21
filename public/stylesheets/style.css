@@ -248,3 +248,20 @@ p.wrap {
     box-shadow: 4px 4px 2px #000000;
     border: solid 2px white;
 }
+
+
+.servicesContainer {
+    background-color: white;
+    width: 100%;
+    margin: 10px;
+    border: solid black 1px;
+    min-height: 450px;
+}
+
+.servicesContainer:hover {
+    background-color: lightgrey;
+}
+
+.servicesContainer a {
+    text-decoration: none;
+}
