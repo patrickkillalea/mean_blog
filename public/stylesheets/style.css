@@ -280,3 +280,7 @@ p.wrap {
     margin: 50px;
     display: inline-block;
 }
+
+.jumbotronImage{
+    height:500px; max-height: 40vh; background-size: cover;
+}
