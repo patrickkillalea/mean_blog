@@ -164,7 +164,7 @@ p.wrap {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.15em;
-    background-color: #D9D9D9;
+    background-color: bisque;
 }
 
 .footer-email {
@@ -198,7 +198,7 @@ p.wrap {
     height: 120px;
     border-radius: 50%;
     border-color: #54a2f6;
-    background: #fff;
+    background: floralwhite;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -250,7 +250,7 @@ p.wrap {
 }
 
 .servicesContainer {
-    background-color: white;
+    background-color: floralwhite;
     width: 100%;
     margin: 10px;
     border: solid black 1px;
@@ -270,13 +270,13 @@ p.wrap {
 .priceContainer {
     height: 200px;
     width: 200px;
-    background-color: grey;
+    background-color: cadetblue;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
     color: white;
     position: relative;
-    border: 5px solid #66ccff;
+    border: 5px solid white;
     margin: 50px;
     display: inline-block;
 }
