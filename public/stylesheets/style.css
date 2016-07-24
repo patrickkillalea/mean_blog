@@ -249,19 +249,34 @@ p.wrap {
     border: solid 2px white;
 }
 
-
 .servicesContainer {
     background-color: white;
     width: 100%;
     margin: 10px;
     border: solid black 1px;
     min-height: 450px;
+    position: relative;
 }
 
 .servicesContainer:hover {
     background-color: lightgrey;
+    cursor: pointer;
 }
 
 .servicesContainer a {
     text-decoration: none;
+}
+
+.priceContainer {
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+    border: 5px solid #66ccff;
+    margin: 50px;
+    display: inline-block;
 }

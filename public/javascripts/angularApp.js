@@ -100,6 +100,16 @@ app.config([
                     }]
                 }
             })
+            .state('whathappens', {
+                url: '/whathappens',
+                templateUrl: '/views/whathappens.html',
+                controller: 'MainCtrl',
+                resolve: {
+                    postPromise: [function() {
+                        $('html, body').animate({ scrollTop: 0 }, 'fast');
+                    }]
+                }
+            })
             .state('posts', {
                 url: '/posts/{id}',
                 templateUrl: '/views/posts.html',
